@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        
+    </nav>
+</header>
+<section class="contact" id="contact">
+    <h2>Бидэнтэй холбогдох</h2>
+    <p>Санал хүсэлт, захиалгаа илгээнэ үү 🍔</p>
+
+    <div class="contact-container">
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Нэр" required>
+            <input type="email" id="email" placeholder="Имэйл" required>
+            <input type="text" id="phone" placeholder="Утасны дугаар">
+            <textarea id="message" placeholder="Таны мессеж" required></textarea>
+            <button type="submit">Илгээх</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Холбоо барих</h3>
+            <p>📍 Улаанбаатар хот</p>
+            <p>📞 +976 9911-2233</p>
+            <p>📧 foodshop@gmail.com</p>
+        </div>
+    </div>
+
+    <p id="statusMessage"></p>
+
+    <div class="contact-info">
+    <h3>Ulanbator</h3>
+    <p>chingekdee duurge</p>
+    <p>indra cyber instut</p>
+    <p>85241798</p>
+
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Ulaanbaatar&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+<script src="contact.js"></script>
+</body>
+</html>

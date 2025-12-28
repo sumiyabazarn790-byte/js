@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #0A1316;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #cccccc;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D68240;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0e0e0e;
+    color: #f1f1f1;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #1a1a1a, #0e0e0e);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #ffb703;
+    letter-spacing: 1px;
+}
+
+.contact p {
+    color: #bdbdbd;
+    margin-top: 8px;
+}
+
+/* LAYOUT */
+.contact-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+}
+
+/* FORM CARD */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px;
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+input, textarea {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 15px;
+    min-height: 52px;
+}
+
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ffb703;
+    box-shadow: 0 0 0 2px rgba(255,183,3,0.25);
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+    color: #111;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,183,3,0.4);
+}
+
+/* INFO */
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffb703;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* MAP */
+.map {
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+}
+
+.map iframe {
+    width: 100%;
+    height: 260px;
+    filter: grayscale(40%) contrast(110%) brightness(90%);
+}
+
+/* STATUS */
+#statusMessage {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
